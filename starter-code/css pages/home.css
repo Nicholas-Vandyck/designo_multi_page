@@ -1,0 +1,119 @@
+*, ::after,::before{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color-peach: #E7816B;
+    --primary-color-black: #1D1C1E;
+    --primary-color-white: #ffffff;
+
+    --secondary-color-light-peach: #FFAD9B;
+    --secondary-color-dark-peach: #333136;
+    --secondary-color-light-grey:  #F1F3F5;
+
+    --main-font: 'Jost', sans-serif;
+    --main-color: #1d1c1e;
+    --main-font-size: 16px;
+    --main-font-weight: 700;
+
+    --heading-1-font: 'Jost', sans-serif;
+    --heading-1-color: #1D1C1E;
+    --heading-1-font-size: 13px;
+
+    --heading-2-font: 'Jost', sans-serif;
+    --heading-2-color: #1d1c1e;
+    --heading-2-font-size: 40px;
+
+    --heading-3-font: 'Jost', sans-serif;
+    --heading-3-color: #1d1c1e;
+    --heading-3-font-size: 20px;
+
+}
+
+body{
+    font-family: 'Jost', sans-serif;
+    font-style: normal;
+}
+
+.first-section{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    /* padding: 0 1rem; */
+    width: 80%;
+    height: 640px;
+    background-color: var(--primary-color-peach);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    
+}
+
+.container-box{
+    /* width: 40%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-image{
+    background-image: url(/starter-code/assets/home/desktop/bg-pattern-hero-home.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 40%;
+}
+.container-header h6{
+    width: 540px;
+    line-height: 48px;
+    font-style: normal;
+    font-size: 48px;
+    font-family: var(--heading-1-font);
+    color: var(--primary-color-white)
+}
+
+.container-paragraph p{
+    width: 445px;
+    height: 78px;
+    font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+color: var(--primary-color-white);
+font-family: var(--main-font);
+
+}
+
+.container-paragraph{
+    padding-top: 11px;
+}
+
+.container-button button{
+    width: 152px;
+    height: 56px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary-color-white);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.container-image img{
+ max-width: 100%;
+
+  
+}
+
+.container-button{
+    padding-top: 41px;
+}
+
+.container-details{
+   
+    width: 540px;
+}
