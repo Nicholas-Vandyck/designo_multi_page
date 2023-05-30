@@ -73,6 +73,50 @@ nav{
     cursor: pointer;
 }
 
+.app-section {
+    width: 69.438rem;
+    height: 15.75rem;
+    background-color: var(--primary-color-peach);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    color: var(--primary-color-white);
+    border-radius: 1rem;
+}
+
+.app-div {
+    border: 1px solid black;
+    position: relative;
+    left: 22rem;
+    width: 730px;
+    height: 124px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+    text-align: center;
+}
+
+.app-div h1{
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.app-div p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.el img{
+    height: 30rem;
+}
+
+.act{
+    /* width: 800px; */
+  }
+
 .project-container{
     overflow: hidden;
     position: relative;
