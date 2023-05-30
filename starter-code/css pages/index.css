@@ -1,0 +1,37 @@
+*, ::after,::before{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color-peach: #E7816B;
+    --primary-color-black: #1D1C1E;
+    --primary-color-white: #ffffff;
+
+    --secondary-color-light-peach: #FFAD9B;
+    --secondary-color-dark-peach: #333136;
+    --secondary-color-light-grey:  #F1F3F5;
+
+    --main-font: 'Jost', sans-serif;
+    --main-color: #1d1c1e;
+    --main-font-size: 16px;
+    --main-font-weight: 700;
+
+    --heading-1-font: 'Jost', sans-serif;
+    --heading-1-color: #1D1C1E;
+    --heading-1-font-size: 13px;
+
+    --heading-2-font: 'Jost', sans-serif;
+    --heading-2-color: #1d1c1e;
+    --heading-2-font-size: 40px;
+
+    --heading-3-font: 'Jost', sans-serif;
+    --heading-3-color: #1d1c1e;
+    --heading-3-font-size: 20px;
+
+}
+
+body{
+    font-family: 'Jost', sans-serif;
+    font-style: normal;
+}
