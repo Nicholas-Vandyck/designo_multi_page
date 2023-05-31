@@ -65,7 +65,7 @@ nav {
     text-decoration: none;
     padding: 0 0;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: var(--heading-1-font-weight);
     color: var(--secondary-color-dark-peach);
     letter-spacing: 2px;
 }
@@ -107,13 +107,13 @@ nav {
 
 .app-div h1 {
     font-size: 48px;
-    font-weight: 500;
+    font-weight: var(--heading-2-font-weight);
     margin-bottom: 1rem;
     z-index: 5;
 }
 
 .app-div p {
-    font-weight: 400;
+    font-weight: var(--heading-1-font-weight);
     font-size: 16px;
     line-height: 26px;
     z-index: 5;
@@ -137,34 +137,85 @@ nav {
     z-index: -1;
 }
 
-.project-container {
-    overflow: hidden;
+.stuff {
+    position: relative;
+    width: 69.438rem;
+    border: 1px solid black;
+    margin: 0 auto;
+    height: auto;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.85rem;
+}
+
+.box {
+    width: 21.875rem;
+    height: 29.875rem;  
+    border-radius: 15px;
+    background-color: var(--primary-color-peach);
+}
+
+.innerbox {
+    width: 21.875rem;
+    height: 20rem;
+    border-radius: 15px 15px 0 0;
+    background-color: #2E3947;
+}
+
+.in_img {
+    background: url(/starter-code/assets/app-design/desktop/image-airfilter.jpg);
+    width: 11.125rem;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    height: 20rem;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-position: center;
+}
+
+.words {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+    color: var(--primary-color-white);
+    width: 19rem;
+    margin: 2rem auto 0;
+}
+
+.words h2 {
+    text-transform: uppercase;
+    font-weight: var(--heading-2-font-weight);
+    letter-spacing: 5px;
+    margin-bottom: 1rem;
+    font-size: 20px;
+}
+
+.words p {
+    font-weight: var(--heading-1-font-weight);
+    font-size: var(--main-font-size);
+}
+
+.project-container{
     position: relative;
     top: 5rem;
-    width: 1111px;
+    width: 69.438rem;
     height: 292px;
     margin: 0 auto;
     border-radius: 15px;
     background-color: var(--primary-color-peach);
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
+    background-image: url(../assets/shared/desktop/bg-pattern-call-to-action.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
 }
 
-.element {
-    margin-top: -15rem;
-}
-
-.element img {
-    height: 30rem;
-}
-
-
-
-.action {
-    width: 800px;
-    margin-left: 18rem;
+.gig{
+    display: flex;
+    justify-content: space-between;
 }
 
 
@@ -208,7 +259,7 @@ nav {
 
 footer {
     width: 100%;
-    height: 393px;
+    height: 430px;
     background-color: var(--primary-color-black);
 }
 
@@ -217,7 +268,7 @@ footer {
     color: var(--primary-color-white);
     padding: 0 18px;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: var(--heading-1-font-weight);
 }
 
 
