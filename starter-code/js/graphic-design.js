@@ -31,8 +31,8 @@ containerItems.forEach(item => {
   containerItem.classList.add('grid-item');
   containerItem.innerHTML = `
   <img src="${item.img}" alt="${item.name}">
-  <h2>${item.title}</h2>
-  <p>${item.description}</p>`;
+  <div><h2>${item.title}</h2>
+    <p>${item.description}</p></div>`;
   gridContainer.appendChild(containerItem);
   return containerItem;
 })
