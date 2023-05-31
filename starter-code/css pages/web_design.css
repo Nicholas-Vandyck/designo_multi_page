@@ -1,8 +1,11 @@
-*, ::after,::before{
+/* Reset styles for all elements */
+*, ::after, ::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+    }
+    
+    /* Define custom color variables */
 :root{
     --primary-color-peach: #E7816B;
     --primary-color-black: #1D1C1E;
@@ -33,63 +36,73 @@
 
 }
 
-body{
+/* Base styles for the entire body */
+body {
     font-family: 'Jost', sans-serif;
     font-style: normal;
-}
-
-main{
+    }
+    
+    /* Styles for the main container */
+    main {
     width: 100%;
     height: 100%;
-}
-
-nav{
-   width: 69.438rem;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   margin: 64.84px auto 0 auto;
-}
-
-.links {
+    }
+    
+    /* Styles for the navigation */
+    nav {
+    width: 69.438rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 64.84px auto 0 auto;
+    }
+    
+    /* Styles for the links container */
+    .links {
     display: flex;
     width: 370px;
     justify-content: space-between;
-}
-
-.links a{
+    }
+    
+    /* Styles for the links */
+    .links a {
     text-decoration: none;
     padding: 0 0;
     font-size: 14px;
     font-weight: 400;
     color: var(--secondary-color-dark-peach);
-    letter-spacing: 2px;    
-}
-
-.link a{
+    letter-spacing: 2px;
+    }
+    
+    /* Styles for the link with class "link" */
+    .link a {
     color: var(--primary-color-white);
-}
-
-.logo{
-    width: 196px;
-}
-
-.links a:hover{
+    }
+    
+    /* Styles for the link on hover */
+    .links a:hover {
     text-decoration: underline;
     cursor: pointer;
-}
-
-.actions{
+    }
+    
+    /* Styles for the logo */
+    .logo {
+    width: 196px;
+    }
+    
+    /* Styles for the actions container */
+    .actions {
     width: 800px;
     margin-left: 19.5rem;
     transform: scaleY(-1);
-   -webkit-transform: scaleY(-1);
-   -moz-transform: scaleY(-1);
-   -ms-transform: scaleY(-1);
-   -o-transform: scaleY(-1);
-}
-
-.web_design{
+    -webkit-transform: scaleY(-1);
+    -moz-transform: scaleY(-1);
+    -ms-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    }
+    
+    /* Styles for the web design container */
+    .web_design {
     position: absolute;
     top: 10rem;
     left: 13rem;
@@ -103,180 +116,283 @@ nav{
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
-}
-
-.design{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  width: 400px;
-  margin: 0 auto;
-  padding-top: 5rem;
-}
-
-.web_design h1{
+    }
+    
+    /* Styles for the design content */
+    .design {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 400px;
+    margin: 0 auto;
+    padding-top: 5rem;
+    }
+    
+    /* Styles for the web design heading */
+    .web_design h1 {
     font-size: 48px;
     color: var(--primary-color-white);
     font-weight: var(--heading-2-font-weight);
     line-height: 48px;
-}
-
-.web_design h2{
+    }
+    
+    /* Styles for the web design subheading */
+    .web_design h2 {
     font-size: var(--main-font-size);
     color: var(--primary-color-white);
     font-weight: var(--heading-1-font-weight);
-}
-
-.leaf img{
+    }
+    
+    /* Styles for the leaf image */
+    .leaf img {
     width: 1006px;
     height: 594px;
     margin-top: 13rem;
-}
-
-.grid-content{
+    }
+    
+    /* Styles for the grid content */
+    .grid-content {
     margin-top: -20rem;
     margin-inline: auto;
     width: 1111px;
-}
-
-.grid-container {
+    }
+    
+    /* Styles for the grid container */
+    .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
     gap: 20px;
-  }
-
-  .grid-item {
+    }
+    
+    /* Styles for the grid item */
+    .grid-item {
     margin: 0 auto;
     background: #FDF3F0;
     border-radius: 15px;
-  }
-
-  .svg-container img{
-   width: 350px;
-   border-top-right-radius: 15px;
-   border-top-left-radius: 15px;
-}
-
-  .express{
+    }
+    
+    /* Styles for the SVG container */
+    .svg-container img {
+    width: 350px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    }
+    
+    /* Styles for the express container */
+    .express {
     text-align: center;
     background: #FDF3F0;
     border-radius: 15px;
     color: var(--primary-color-peach);
     line-height: 26px;
-  }
-
-  .express h1{
+    }
     
+    /* Styles for the express heading */
+    .express h1 {
     padding-top: 2rem;
     font-weight: var(--heading-2-font-weight);
     font-size: var(--heading-3-font-size);
     letter-spacing: 5px;
-  }
-
-  .express h2{
+    }
+    
+    /* Styles for the express subheading */
+    .express h2 {
     margin: 0 auto;
     color: var(--secondary-color-dark-peach);
     font: var(--main-font-size);
     padding-top: 16px;
     width: 286px;
-  }
+    }
 
-.project-container{
-    position: relative;
+    .grid-container-container {
+       width: 100%;
+       height: 400px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+
+      }
+      
+      .grid-content-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        width: 74%;
+        height: 308px;
+      }
+      
+      .grid-item-container {
+        display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       /*width: 641px;
+       *//*height: 308px;
+       border: 2px solid blue;
+       */background: url(../assets/home/desktop/image-app-design.jpg);
+       background-repeat: no-repeat;
+       background-size: cover;
+       /*margin: 0 auto;
+       */border-radius: 15px;
+       
+}
+      
+      .grid-item-container-container {
+        display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+        background: url(../assets/home/desktop/image-graphic-design.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 35rem;
+         border-radius: 15px;
+      }
+
+      .app{
+        text-align: center;
+        
+      }
+      
+        .app h3{
+        text-transform: uppercase;
+        color: var(--primary-color-white);
+        font-style: normal;
+        font-weight: 500;
+        font-size: var(--heading-2-font-size);
+        line-height: 48px;
+        letter-spacing: 2px;
+        
+      }
+      .app button{
+        color: white;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        background: none;
+        border: none;
+      }
+      .app span{
+        margin-left: 2rem;
+       color:  #E7816B
+      }
+
+
+      
+    
+    /* Styles for the project container */
+    .project-container {
     overflow: hidden;
+    position: relative;
     top: 5rem;
     width: 1111px;
     height: 292px;
     margin: 0 auto;
     border-radius: 15px;
     background-color: var(--primary-color-peach);
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
-}
-
-.element {
-    margin-top: -15rem;
-}
-
-.element img{
-    height: 30rem;
-}
-
-.action{
-  width: 800px;
-  margin-left: 18rem;
-}
-
-.get-touch {
+    background-image: url(../assets/shared/desktop/bg-pattern-call-to-action.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+    
+    /* Styles for the get in touch button */
+    .get-touch {
     width: 9.5rem;
     height: 3.5rem;
     position: relative;
-    top: -17rem;
-    float: right;
+    margin-top: 8rem;
     margin-right: 5rem;
     border-radius: .5rem;
     border: none;
-    -webkit-border-radius: .5rem;
-    -moz-border-radius: .5rem;
-    -ms-border-radius: .5rem;
-    -o-border-radius: .5rem;
-}
-
-.project{
+    }
+    
+    /* Styles for the gig container */
+    .gig {
+    display: flex;
+    justify-content: space-between;
+    }
+    
+    /* Styles for the element container */
+    .element {
+    margin-top: -18rem;
+    }
+    
+    /* Styles for the element image */
+    .element img {
+    height: 30rem;
+    }
+    
+    /* Styles for the action container */
+    .action {
+    width: 800px;
+    margin-left: 18rem;
+    }
+    
+    /* Styles for the project container */
+    .project {
     position: relative;
     top: 5rem;
     margin-inline: 10%;
-}
-
-.project h1{
+    }
+    
+    /* Styles for the project heading */
+    .project h1 {
     font-size: var(--heading-2-font-size);
     font-weight: var(--heading-2-font-weight);
     color: var(--primary-color-white);
     line-height: 40px;
     width: 268px;
-}
-
-.project h2{
+    }
+    
+    /* Styles for the project subheading */
+    .project h2 {
     font-size: var(--main-font-size);
     color: var(--primary-color-white);
     font-weight: var(--heading-1-font-weight);
     line-height: 26px;
     margin-top: 1rem;
     width: 459px;
-}
-
-footer{
+    }
+    
+    /* Styles for the footer */
+    footer {
     width: 100%;
     height: 393px;
     background-color: var(--primary-color-black);
-}
-
-.footer-links a{
+    }
+    
+    /* Styles for the footer links */
+    .footer-links a {
     text-decoration: none;
     color: var(--primary-color-white);
     padding: 0 18px;
     font-size: 14px;
     font-weight: 400;
-} 
-
-
-.foot{
+    }
+    
+    /* Styles for the foot container */
+    .foot {
     padding-top: 7rem;
-} 
-
-hr{
+    }
+    
+    /* Styles for the horizontal rule */
+    hr {
     width: 1111px;
     height: 1px;
     margin: 40px auto;
-}
-
-
-.container {
+    }
+    
+    /* Styles for the container */
+    .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -284,36 +400,51 @@ hr{
     width: 69.438rem;
     margin: 0 auto;
     line-height: 1.5rem;
-}
-.container-direction {
+    }
+    
+    /* Styles for the container with direction */
+    .container-direction {
     mix-blend-mode: normal;
     opacity: 0.5;
-}
-.container-direction h1 {
+    }
+    
+    /* Styles for the container heading with direction */
+    .container-direction h1 {
     font-size: var(--heading-3-font-size);
-}
-.container-direction h2 {
+    }
+    
+    /* Styles for the container subheading with direction */
+    .container-direction h2 {
     font-size: var(--heading-1-font-size);
-}
-.container-contact {
+    }
+    
+    /* Styles for the container with contact */
+    .container-contact {
     mix-blend-mode: normal;
     opacity: 0.5;
-}
-.container-contact h1 {
+    }
+    
+    /* Styles for the container heading with contact */
+    .container-contact h1 {
     font-size: var(--heading-3-font-size);
-}
-.container-contact h2 {
+    }
+    
+    /* Styles for the container subheading with contact */
+    .container-contact h2 {
     font-size: var(--heading-1-font-size);
-}
-.footer-icons {
+    }
+    
+    /* Styles for the footer icons */
+    .footer-icons {
     width: 10rem;
     display: flex;
     justify-content: space-between;
     margin-top: 45px;
-}
-.footer-icons img {
+    }
+    
+    /* Styles for the footer icon images */
+    .footer-icons img {
     width: 15px;
-}
-
+    }
 
 
