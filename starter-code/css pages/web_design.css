@@ -247,7 +247,7 @@ body {
        justify-content: center;
        align-items: center;
        text-align: center;
-        background: url(../assets/home/desktop/image-graphic-design.jpg);
+        background: rgba(14, 10, 10, 0.8)url(../assets/home/desktop/image-graphic-design.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         width: 35rem;
@@ -262,7 +262,6 @@ body {
         .app h3{
         text-transform: uppercase;
         color: var(--primary-color-white);
-        font-style: normal;
         font-weight: 500;
         font-size: var(--heading-2-font-size);
         line-height: 48px;
@@ -271,7 +270,6 @@ body {
       }
       .app button{
         color: white;
-        font-style: normal;
         font-weight: 500;
         font-size: 15px;
         line-height: 22px;
