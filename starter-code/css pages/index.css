@@ -95,22 +95,6 @@ nav{
     overflow: hidden;
 }
 
-.element {
-    margin-top: -15rem;
-}
-
-.element img{
-    height: 30rem;
-}
-
-
-
-.action{
-  width: 800px;
-  margin-left: 18rem;
-}
-
-
 .get-touch {
     width: 9.5rem;
     height: 3.5rem;
@@ -120,12 +104,16 @@ nav{
     border-radius: .5rem;
     border: none;
 }
-
+.gig{
+    display: flex;
+    justify-content: space-between;
+}
 .project{
     position: relative;
     top: 5rem;
     margin-inline: 10%;
 }
+
 
 .project h1{
     font-size: var(--heading-2-font-size);
