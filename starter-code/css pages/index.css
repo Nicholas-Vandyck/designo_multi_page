@@ -44,19 +44,26 @@ main{
 }
 
 nav{
+    width: 69.438rem;
    display: flex;
-   justify-content: space-around;
+   justify-content: space-between;
    align-items: center;
-   margin-top: 64.84px;
+   margin: 64.84px auto 0 auto;
+}
+
+.links {
+    display: flex;
+    width: 370px;
+    justify-content: space-between;
 }
 
 .links a{
     text-decoration: none;
-    padding: 0 18px;
+    padding: 0 0;
     font-size: 14px;
     font-weight: 400;
     color: var(--secondary-color-dark-peach);
-    letter-spacing: 2px;
+    letter-spacing: 2px;    
 }
 
 .link a{
@@ -85,6 +92,7 @@ nav{
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
+    overflow: hidden;
 }
 
 .element {
