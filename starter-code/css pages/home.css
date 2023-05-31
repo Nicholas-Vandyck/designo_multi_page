@@ -290,7 +290,9 @@ color: var(--primary-color-white);
 
 
 .hero-image{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .hero-text h1{
     text-align: center;
@@ -316,7 +318,9 @@ letter-spacing: 5px;
 
 
 .hero-image1{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .hero-text1 h1{
     text-align: center;
@@ -350,7 +354,9 @@ letter-spacing: 5px;
 
 
 .hero-image2{
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .hero-text2 h1{
     text-align: center;
@@ -560,7 +566,7 @@ hr{
 @media only screen and (max-width:820px) and (min-width: 450px){
 
  body{
-    background: red;
+    
  }
   .container1{
    height: 843px;
@@ -578,13 +584,15 @@ hr{
 .container-details{
     width: 573px;
     height: 326px;
-
+  margin-left: 2rem;
     margin-top: 400px;
     
 }
 
-.container-header h1{
+.container-header h6{
     font-size: 48px;
+    text-align: center;
+    margin: 0 auto;
 }
 .container-paragraph p{
     margin: 0 auto;
@@ -610,19 +618,21 @@ hr{
     width: 689px;
     height: 200px;
     background-image: url(/starter-code/assets/home/tablet/image-web-design.jpg);
-
+    border-radius: 5px;
 }
 
 .second-element {
     width: 689px; 
     height: 200px;
-    background-image: url(/starter-code/assets/home/tablet/image-app-design.jpg)
+    background-image: url(/starter-code/assets/home/tablet/image-app-design.jpg);
+    border-radius: 5px;
   }
 
   .third-element {
     width:  689px;
     height: 200px;
     background-image: url(/starter-code/assets/home/tablet/image-graphic-design.jpg);
+     border-radius: 5px;
   }
 
  .hero{
@@ -636,6 +646,10 @@ hr{
 
  .hero-content{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+   
     
  }
 
@@ -649,6 +663,7 @@ hr{
 
  .hero-content1{
     display: flex;
+    
 
  }
  .hero-text1 h1{
@@ -670,4 +685,64 @@ hr{
  .hero-text2 p{
     text-align: left;
  }
+
+ .project-container{
+    width: 689px;
+}
+.gig{
+    display: block;
+    margin: 0 auto;
+}
+.project{
+    width: 573px;
+    justify-content: center;
+    margin:  0 auto;
+}
+.project h2,.project h1{
+    margin: 0 auto;
+}
+.project h2{
+    width: 25rem;
+    text-align: center;
+}
+.project h1{
+    width: 335px;
+    height: 98px;
+    text-align: center;
+    margin-top: -2.5rem;
+    font-size: 40px;
+}
+.get-touch {
+    margin-right: 17rem;
+    margin-top: 7rem;
+    border-radius: .5rem;
+    border: none;
+}
+
+
+.foot{
+    width: 768px;
+}
+hr{
+    width: 87%;
+    height: 1px;
+    /* margin: 30px auto; */
+}
+.container1 {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-left: 3rem;
+    width: 40rem;
+}
+.footer-icons {
+    width: 10rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+}
+.footer-icons img {
+    width: 10px;
+}
+
 }
