@@ -373,6 +373,25 @@ letter-spacing: 5px;
 }
 
 
+.side-leaf{
+    position: absolute;
+    right: 0%;
+  
+}
+
+.side-leaf img{
+    /* transform: scaleX(-1); */
+    /* transform: scaleY(-1); */
+    /* transform: rotateX(180deg); */
+    transform: rotate(180deg);
+    width: 1006px;
+    height: 594px;
+    /* float: right;
+    position: relative;
+    bottom: 10rem; */
+    position: relative;
+    bottom: 17rem;
+}
 
 
 
