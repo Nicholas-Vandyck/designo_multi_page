@@ -276,14 +276,122 @@ padding-top: 1.5rem;
 color: var(--primary-color-white);
 }
 
-.first-hero-text h1{
+
+
+
+
+
+
+.hero-image{
     text-align: center;
 }
-.first-hero-text p{
- width: 350px;
- text-align: center;
+.hero-text h1{
+    text-align: center;
+    font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 26px;
+text-transform: uppercase;
+
+
+letter-spacing: 5px;
 }
 
+.hero-text p{
+    width: 350px;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+
+
+
+.hero-image1{
+    text-align: center;
+}
+.hero-text1 h1{
+    text-align: center;
+    font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 26px;
+text-transform: uppercase;
+
+
+letter-spacing: 5px;
+}
+
+.hero-text1 p{
+    width: 350px;
+     margin-top: 2rem;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hero-image2{
+    text-align: center;
+}
+.hero-text2 h1{
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.hero-text2 p{
+    width: 350px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 2rem;
+}
+
+.hero-text{
+    margin-top: 1.5rem;
+}
+.hero-text1{
+    margin-top: 1.5rem;
+}
+.hero-text2{
+    margin-top: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+  
+}
 .project-container{
     position: relative;
     top: 5rem;
