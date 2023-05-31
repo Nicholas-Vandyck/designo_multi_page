@@ -44,19 +44,26 @@ main{
 }
 
 nav{
+   width: 69.438rem;
    display: flex;
-   justify-content: space-around;
+   justify-content: space-between;
    align-items: center;
-   margin-top: 64.84px;
+   margin: 64.84px auto 0 auto;
+}
+
+.links {
+    display: flex;
+    width: 370px;
+    justify-content: space-between;
 }
 
 .links a{
     text-decoration: none;
-    padding: 0 18px;
+    padding: 0 0;
     font-size: 14px;
     font-weight: 400;
     color: var(--secondary-color-dark-peach);
-    letter-spacing: 2px;
+    letter-spacing: 2px;    
 }
 
 .link a{
@@ -73,9 +80,9 @@ nav{
 }
 
 .actions{
-   width: 800px;
+    width: 800px;
     margin-left: 19.5rem;
-   transform: scaleY(-1);
+    transform: scaleY(-1);
    -webkit-transform: scaleY(-1);
    -moz-transform: scaleY(-1);
    -ms-transform: scaleY(-1);
@@ -217,7 +224,6 @@ hr{
     width: 1111px;
     height: 1px;
     margin: 40px auto;
-    
 }
 
 
