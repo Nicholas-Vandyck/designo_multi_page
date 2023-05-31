@@ -40,7 +40,7 @@ containerItems.forEach(item => {
 const designItems = [
     {
         title: 'App Design',
-        text: 'View Projects >'
+        text: 'View Projects '
     }
     
 ]
@@ -48,10 +48,13 @@ const designItems = [
 const gridItems = document.querySelector('.Designs');
 designItems.forEach(item => {
     const designItem = document.createElement('div');
+    const spanElement = document.createElement('span');
     designItem.classList.add('design-item');
     designItem.innerHTML =`
     <h2>${item.title}</h2>
     <button>${item.text}</button>`;
+    spanElement.textContent = ' > ';
+    designItem.querySelector('button').appendChild(spanElement);
     gridItems.appendChild(designItem);
     return designItem;
 })
@@ -59,16 +62,19 @@ designItems.forEach(item => {
 const designItem = [
     {
         title: 'Web Design',
-        text: 'View Projects >'
+        text: 'View Projects '
     }
 ]
 const gridItem = document.querySelector('.Designs');
 designItem.forEach(item => {
     const designItem = document.createElement('div');
+    const spanElement = document.createElement('span');
     designItem.classList.add('design-item1');
     designItem.innerHTML =`
     <h2>${item.title}</h2>
     <button>${item.text}</button>`;
+    spanElement.textContent = ' > ';
+    designItem.querySelector('button').appendChild(spanElement);
     gridItems.appendChild(designItem);
     return designItem;
 })
