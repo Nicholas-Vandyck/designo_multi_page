@@ -102,6 +102,9 @@ nav{
     color: var(--primary-color-white);
     margin-bottom: 5rem;
 }
+.intro h1 {
+    text-transform: capitalize;
+}
 .intro p{
     padding-top: 1rem;
     width: 23rem;
@@ -323,7 +326,7 @@ footer{
     background-color: var(--primary-color-black);
 }
 
-.footer-links a{
+.links-link a{
     text-decoration: none;
     color: var(--primary-color-white);
     padding: 0 18px;
@@ -393,7 +396,7 @@ hr{
         /* justify-content: space-around; */
     }
     .logo{
-        margin-left: 1.5rem;
+        width: 10rem;
     }
 
     .Main-content{
@@ -424,8 +427,6 @@ hr{
         gap: 2rem;
         height: 478px;
         justify-content: center;
-
-
     }
     .container img{
         width: 339px;
@@ -531,4 +532,106 @@ hr{
     .footer-icons img {
         width: 10px;
     }
+}
+
+@media only screen and (max-width:425px) and (min-width:305px){
+    .page{
+        /* overflow-x: hidden; */
+        width: 375px;
+        height: 3747px;
+    }
+    nav{
+        width:375px;
+    }
+    nav .links {
+        display: none;
+    }
+
+    .bg-svg{
+        display: none;
+    }
+    .Main-content{
+        width: 375px;
+        height: 320px;
+        border-radius: 0;
+    }
+
+    .grid-item {
+        display: flex;
+        background-color: var(--primary-color-white);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 327px;
+        height: 478px;
+        background: #FDF3F0
+        
+    }
+    .container {
+        display: grid;
+        grid-template-columns: auto ;
+        gap: 2rem;
+        height: 478px;
+        justify-content: center;
+    }
+    .container img{
+        width: 327px;
+        height: 320px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        margin-top: -1.5rem;
+    }
+    .third-content{
+        margin-top: 70rem;
+
+    }
+    .Designs{
+        grid-template-columns: 1fr ;
+        gap: 1rem;
+    }
+    .design-item,.design-item1{
+        width: 327px;
+        height: 250px;
+    }
+
+    .project-container{
+        width: 327px;
+        height: 379px;
+    }
+    .gig{
+        display: block;
+    }
+    .project{
+        width: 279px;
+        justify-content: center;
+        margin:  0 auto;
+    }
+    
+    .project h2{
+        width: 19rem;
+        text-align: center;
+        padding-right: 1rem;
+        margin-top: 2rem;
+    }
+    .project h1{
+        width: 279px;
+        height: 82px;
+        text-align: center;
+        margin-top: -1.5rem;
+    }
+    .get-touch {
+        margin-left: 5rem;
+        top: -1rem;
+        border-radius: .5rem;
+        border: none;
+    }
+
+
+    footer{
+        /* display: block; */
+        width: 375px;
+        height: 875px;
+    }
+    
+    
 }
