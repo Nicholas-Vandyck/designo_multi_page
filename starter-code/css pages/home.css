@@ -565,12 +565,11 @@ hr{
 
 @media only screen and (max-width:820px) and (min-width: 450px){
 
- body{
-    
- }
+
   .container1{
    height: 843px;
     width: 689px;
+    margin-right: 2.5rem;
   }
 
 .container-box{
@@ -603,10 +602,7 @@ hr{
    margin: 0;
 }
 
-.pattern img{
 
-   
-}
 .grid-container{
     display: flex;
     flex-direction: column;
