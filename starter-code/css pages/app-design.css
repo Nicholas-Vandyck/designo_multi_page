@@ -140,49 +140,50 @@ nav {
 .stuff {
     position: relative;
     width: 69.438rem;
-    border: 1px solid black;
     margin: 0 auto;
     height: auto;
-    cursor: pointer;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: auto auto auto;
     gap: 1.85rem;
+    margin-bottom: 10rem;
+    margin-top: -25rem;
 }
 
 .box {
     width: 21.875rem;
-    height: 29.875rem;  
+    height: 29.875rem;
     border-radius: 15px;
-    background-color: var(--primary-color-peach);
+    background-color: #FDF3F0;
+    transition: background-color 0.3s;
 }
 
-.innerbox {
-    width: 21.875rem;
-    height: 20rem;
-    border-radius: 15px 15px 0 0;
-    background-color: #2E3947;
+.box:hover {
+    cursor: pointer;
+    background-color: var(--primary-color-peach);
+    color: #fff;
 }
 
 .in_img {
-    background: url(/starter-code/assets/app-design/desktop/image-airfilter.jpg);
-    width: 11.125rem;
-    /* border: 1px solid red; */
     margin: 0 auto;
     height: 20rem;
-    /* background-repeat: no-repeat; */
     background-size: cover;
     background-position: center;
+    border-radius: 15px 15px 0 0;
 }
 
 .words {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     text-align: center;
     color: var(--primary-color-white);
     width: 19rem;
     margin: 2rem auto 0;
+}
+
+.box:hover h2,
+.box:hover p {
+    color: var(--primary-color-white);
 }
 
 .words h2 {
@@ -191,14 +192,56 @@ nav {
     letter-spacing: 5px;
     margin-bottom: 1rem;
     font-size: 20px;
+    color: var(--primary-color-peach);
 }
 
 .words p {
     font-weight: var(--heading-1-font-weight);
     font-size: var(--main-font-size);
+    color: var(--primary-color-black);
 }
 
-.project-container{
+.pages {
+    border: 1px solid black;
+    width: 69.438rem;
+    margin: 0 auto;
+    height: auto;
+    display: grid;
+}
+
+.page1 {
+    background-image: url(/starter-code/assets/home/desktop/image-web-design-small.jpg);
+    height: 19.25rem;
+    width: 33.813rem;
+    border-radius: 15px;
+
+}
+
+.web {
+    position: relative;
+    bottom: 10rem;
+    color: var(--primary-color-white);
+    width: 16.75rem;
+    /* margin: 0 auto; */
+    font-weight: 400;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.web h1 {
+    font-size: 40px;
+}
+
+.web a {
+    text-decoration: none;
+    font-size: 15px;
+    color: var(--primary-color-white);
+}
+
+.project-container {
     position: relative;
     top: 5rem;
     width: 69.438rem;
@@ -213,7 +256,7 @@ nav {
     overflow: hidden;
 }
 
-.gig{
+.gig {
     display: flex;
     justify-content: space-between;
 }
