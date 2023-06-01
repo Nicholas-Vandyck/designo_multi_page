@@ -1,448 +1,619 @@
 /* Reset styles for all elements */
-*, ::after, ::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    }
-    
-    /* Define custom color variables */
-:root{
-    --primary-color-peach: #E7816B;
-    --primary-color-black: #1D1C1E;
-    --primary-color-white: #ffffff;
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    --secondary-color-light-peach: #FFAD9B;
-    --secondary-color-dark-peach: #333136;
-    --secondary-color-light-grey:  #F1F3F5;
+/* Define custom color variables */
+:root {
+  --primary-color-peach: #E7816B;
+  --primary-color-black: #1D1C1E;
+  --primary-color-white: #ffffff;
 
-    --main-font: 'Jost', sans-serif;
-    --main-color: #1d1c1e;
-    --main-font-size: 16px;
-    --main-font-weight: 700;
+  --secondary-color-light-peach: #FFAD9B;
+  --secondary-color-dark-peach: #333136;
+  --secondary-color-light-grey: #F1F3F5;
 
-    --heading-1-font: 'Jost', sans-serif;
-    --heading-1-color: #1D1C1E;
-    --heading-1-font-size: 13px;
-    --heading-1-font-weight: 400;
+  --main-font: 'Jost', sans-serif;
+  --main-color: #1d1c1e;
+  --main-font-size: 16px;
+  --main-font-weight: 700;
 
-    --heading-2-font: 'Jost', sans-serif;
-    --heading-2-color: #1d1c1e;
-    --heading-2-font-size: 40px;
-    --heading-2-font-weight: 500;
+  --heading-1-font: 'Jost', sans-serif;
+  --heading-1-color: #1D1C1E;
+  --heading-1-font-size: 13px;
+  --heading-1-font-weight: 400;
 
-    --heading-3-font: 'Jost', sans-serif;
-    --heading-3-color: #1d1c1e;
-    --heading-3-font-size: 20px;
+  --heading-2-font: 'Jost', sans-serif;
+  --heading-2-color: #1d1c1e;
+  --heading-2-font-size: 40px;
+  --heading-2-font-weight: 500;
+
+  --heading-3-font: 'Jost', sans-serif;
+  --heading-3-color: #1d1c1e;
+  --heading-3-font-size: 20px;
 
 }
 
 /* Base styles for the entire body */
 body {
-    font-family: 'Jost', sans-serif;
-    font-style: normal;
-    }
-    
-    /* Styles for the main container */
-    main {
-    width: 100%;
-    height: 100%;
-    }
-    
-    /* Styles for the navigation */
-    nav {
-    width: 69.438rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 64.84px auto 0 auto;
-    }
-    
-    /* Styles for the links container */
-    .links {
-    display: flex;
-    width: 370px;
-    justify-content: space-between;
-    }
-    
-    /* Styles for the links */
-    .links a {
-    text-decoration: none;
-    padding: 0 0;
-    font-size: 14px;
-    font-weight: 400;
-    color: var(--secondary-color-dark-peach);
-    letter-spacing: 2px;
-    }
-    
-    /* Styles for the link with class "link" */
-    .link a {
-    color: var(--primary-color-white);
-    }
-    
-    /* Styles for the link on hover */
-    .links a:hover {
-    text-decoration: underline;
-    cursor: pointer;
-    }
-    
-    /* Styles for the logo */
-    .logo {
-    width: 196px;
-    }
-    
-    /* Styles for the actions container */
-    .actions {
-    width: 800px;
-    margin-left: 19.5rem;
-    transform: scaleY(-1);
-    -webkit-transform: scaleY(-1);
-    -moz-transform: scaleY(-1);
-    -ms-transform: scaleY(-1);
-    -o-transform: scaleY(-1);
-    }
-    
-    /* Styles for the web design container */
-    .web_design {
-    position: absolute;
-    top: 10rem;
-    left: 13rem;
-    overflow: hidden;
-    width: 1111px;
-    height: 292px;
-    margin: 0 auto;
-    background-color: var(--primary-color-peach);
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
-    }
-    
-    /* Styles for the design content */
-    .design {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    width: 400px;
-    margin: 0 auto;
-    padding-top: 5rem;
-    }
-    
-    /* Styles for the web design heading */
-    .web_design h1 {
-    font-size: 48px;
-    color: var(--primary-color-white);
-    font-weight: var(--heading-2-font-weight);
-    line-height: 48px;
-    }
-    
-    /* Styles for the web design subheading */
-    .web_design h2 {
-    font-size: var(--main-font-size);
-    color: var(--primary-color-white);
-    font-weight: var(--heading-1-font-weight);
-    }
-    
-    /* Styles for the leaf image */
-    .leaf img {
-    width: 1006px;
-    height: 594px;
-    margin-top: 13rem;
-    }
-    
-    /* Styles for the grid content */
-    .grid-content {
-    margin-top: -20rem;
-    margin-inline: auto;
-    width: 1111px;
-    }
-    
-    /* Styles for the grid container */
-    .grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, auto);
-    gap: 20px;
-    }
-    
-    /* Styles for the grid item */
-    .grid-item {
-    margin: 0 auto;
-    background: #FDF3F0;
-    border-radius: 15px;
-    }
-    
-    /* Styles for the SVG container */
-    .svg-container img {
-    width: 350px;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
-    }
-    
-    /* Styles for the express container */
-    .express {
-    text-align: center;
-    background: #FDF3F0;
-    border-radius: 15px;
-    color: var(--primary-color-peach);
-    line-height: 26px;
-    }
-    
-    /* Styles for the express heading */
-    .express h1 {
-    padding-top: 2rem;
-    font-weight: var(--heading-2-font-weight);
-    font-size: var(--heading-3-font-size);
-    letter-spacing: 5px;
-    }
-    
-    /* Styles for the express subheading */
-    .express h2 {
-    margin: 0 auto;
-    color: var(--secondary-color-dark-peach);
-    font: var(--main-font-size);
-    padding-top: 16px;
-    width: 286px;
-    }
-
-    .grid-container-container {
-       width: 100%;
-       height: 400px;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-
-      }
-      
-      .grid-content-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-        width: 74%;
-        height: 308px;
-      }
-      
-      .grid-item-container {
-        display: flex;
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
-       text-align: center;
-       /*width: 641px;
-       *//*height: 308px;
-       border: 2px solid blue;
-       */background: url(../assets/home/desktop/image-app-design.jpg);
-       background-repeat: no-repeat;
-       background-size: cover;
-       /*margin: 0 auto;
-       */border-radius: 15px;
-       
+  font-family: 'Jost', sans-serif;
+  font-style: normal;
 }
-      
-      .grid-item-container-container {
-        display: flex;
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
-       text-align: center;
-        background: rgba(14, 10, 10, 0.8)url(../assets/home/desktop/image-graphic-design.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 35rem;
-         border-radius: 15px;
-      }
 
-      .app{
-        text-align: center;
-        
-      }
-      
-        .app h3{
-        text-transform: uppercase;
-        color: var(--primary-color-white);
-        font-weight: 500;
-        font-size: var(--heading-2-font-size);
-        line-height: 48px;
-        letter-spacing: 2px;
-        
-      }
-      .app button{
-        color: white;
-        font-weight: 500;
-        font-size: 15px;
-        line-height: 22px;
-        letter-spacing: 5px;
-        text-transform: uppercase;
-        background: none;
-        border: none;
-      }
-      .app span{
-        margin-left: 2rem;
-       color:  #E7816B
-      }
+/* Styles for the main container */
+main {
+  width: 100%;
+  height: 100%;
+}
 
+/* Styles for the navigation */
+nav {
+  width: 69.438rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 64.84px auto 0 auto;
+}
 
-      
-    
-    /* Styles for the project container */
-    .project-container {
-    overflow: hidden;
-    position: relative;
-    top: 5rem;
-    width: 1111px;
-    height: 292px;
-    margin: 0 auto;
-    border-radius: 15px;
-    background-color: var(--primary-color-peach);
-    background-image: url(../assets/shared/desktop/bg-pattern-call-to-action.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    }
-    
-    /* Styles for the get in touch button */
-    .get-touch {
-    width: 9.5rem;
-    height: 3.5rem;
-    position: relative;
-    margin-top: 8rem;
-    margin-right: 5rem;
-    border-radius: .5rem;
-    border: none;
-    }
-    
-    /* Styles for the gig container */
-    .gig {
-    display: flex;
-    justify-content: space-between;
-    }
-    
-    /* Styles for the element container */
-    .element {
-    margin-top: -18rem;
-    }
-    
-    /* Styles for the element image */
-    .element img {
-    height: 30rem;
-    }
-    
-    /* Styles for the action container */
-    .action {
-    width: 800px;
-    margin-left: 18rem;
-    }
-    
-    /* Styles for the project container */
-    .project {
-    position: relative;
-    top: 5rem;
-    margin-inline: 10%;
-    }
-    
-    /* Styles for the project heading */
-    .project h1 {
-    font-size: var(--heading-2-font-size);
-    font-weight: var(--heading-2-font-weight);
-    color: var(--primary-color-white);
-    line-height: 40px;
-    width: 268px;
-    }
-    
-    /* Styles for the project subheading */
-    .project h2 {
-    font-size: var(--main-font-size);
-    color: var(--primary-color-white);
-    font-weight: var(--heading-1-font-weight);
-    line-height: 26px;
-    margin-top: 1rem;
-    width: 459px;
-    }
-    
-    /* Styles for the footer */
-    footer {
+/* Styles for the links container */
+.links {
+  display: flex;
+  width: 370px;
+  justify-content: space-between;
+}
+
+/* Styles for the links */
+.links a {
+  text-decoration: none;
+  padding: 0 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--secondary-color-dark-peach);
+  letter-spacing: 2px;
+}
+
+/* Styles for the link with class "link" */
+.link a {
+  color: var(--primary-color-white);
+}
+
+/* Styles for the link on hover */
+.links a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Styles for the logo */
+.logo {
+  width: 196px;
+}
+
+/* Styles for the actions container */
+.actions {
+  width: 800px;
+  margin-left: 19.5rem;
+  transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  -moz-transform: scaleY(-1);
+  -ms-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+}
+
+/* Styles for the web design container */
+.web_design {
+  position: absolute;
+  top: 10rem;
+  left: 13rem;
+  overflow: hidden;
+  width: 1111px;
+  height: 292px;
+  margin: 0 auto;
+  background-color: var(--primary-color-peach);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+/* Styles for the design content */
+.design {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 400px;
+  margin: 0 auto;
+  padding-top: 5rem;
+}
+
+/* Styles for the web design heading */
+.web_design h1 {
+  font-size: 48px;
+  color: var(--primary-color-white);
+  font-weight: var(--heading-2-font-weight);
+  line-height: 48px;
+}
+
+/* Styles for the web design subheading */
+.web_design h2 {
+  font-size: var(--main-font-size);
+  color: var(--primary-color-white);
+  font-weight: var(--heading-1-font-weight);
+}
+
+/* Styles for the leaf image */
+.leaf img {
+  width: 1006px;
+  height: 594px;
+  margin-top: 13rem;
+}
+
+/* Styles for the grid content */
+.grid-content {
+  margin-top: -20rem;
+  margin-inline: auto;
+  width: 1111px;
+}
+
+/* Styles for the grid container */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 20px;
+}
+
+/* Styles for the grid item */
+.grid-item {
+  margin: 0 auto;
+  background: #FDF3F0;
+  border-radius: 15px;
+}
+
+/* Styles for the SVG container */
+.svg-container img {
+  width: 350px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+/* Styles for the express container */
+.express {
+  text-align: center;
+  background: #FDF3F0;
+  border-radius: 15px;
+  color: var(--primary-color-peach);
+  line-height: 26px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+/* Styles for the express heading */
+.express h1 {
+  padding-top: 2rem;
+  font-weight: var(--heading-2-font-weight);
+  font-size: var(--heading-3-font-size);
+  letter-spacing: 5px;
+}
+
+/* Styles for the express subheading */
+.express h2 {
+  margin: 0 auto;
+  color: var(--secondary-color-dark-peach);
+  font: var(--main-font-size);
+  padding-top: 16px;
+  width: 286px;
+}
+
+.grid-container-container {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.grid-content-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  width: 74%;
+  height: 308px;
+}
+
+.grid-item-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 35rem;
+  border-radius: 15px;
+  position: relative;
+}
+
+.grid-item-container::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.grid-item-container::after {
+  content: "";
+  background: url(../assets/home/desktop/image-app-design.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 15px;
+  z-index: -2;
+}
+
+.grid-item-container-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 35rem;
+  border-radius: 15px;
+  position: relative;
+}
+
+.grid-item-container-container::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.grid-item-container-container::after {
+  content: "";
+  background: url(../assets/home/desktop/image-graphic-design.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 15px;
+  z-index: -2;
+}
+
+.app {
+  text-align: center;
+}
+
+.app h3 {
+  text-transform: uppercase;
+  color: var(--primary-color-white);
+  font-weight: 500;
+  font-size: var(--heading-2-font-size);
+  line-height: 48px;
+  letter-spacing: 2px;
+
+}
+
+.app button {
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  background: none;
+  border: none;
+}
+
+.app span {
+  margin-left: 2rem;
+  color: #E7816B
+}
+
+/* Styles for the project container */
+.project-container {
+  overflow: hidden;
+  position: relative;
+  top: 5rem;
+  width: 1111px;
+  height: 292px;
+  margin: 0 auto;
+  border-radius: 15px;
+  background-color: var(--primary-color-peach);
+  background-image: url(../assets/shared/desktop/bg-pattern-call-to-action.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Styles for the get in touch button */
+.get-touch {
+  width: 9.5rem;
+  height: 3.5rem;
+  position: relative;
+  margin-top: 8rem;
+  margin-right: 5rem;
+  border-radius: .5rem;
+  border: none;
+}
+
+.get-touch:hover{
+  cursor: pointer;
+  color: var(--primary-color-white);
+  background-color: var(--secondary-color-light-peach);
+}
+
+/* Styles for the gig container */
+.gig {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Styles for the element container */
+.element {
+  margin-top: -18rem;
+}
+
+/* Styles for the element image */
+.element img {
+  height: 30rem;
+}
+
+/* Styles for the action container */
+.action {
+  width: 800px;
+  margin-left: 18rem;
+}
+
+/* Styles for the project container */
+.project {
+  position: relative;
+  top: 5rem;
+  margin-inline: 10%;
+}
+
+/* Styles for the project heading */
+.project h1 {
+  font-size: var(--heading-2-font-size);
+  font-weight: var(--heading-2-font-weight);
+  color: var(--primary-color-white);
+  line-height: 40px;
+  width: 268px;
+}
+
+/* Styles for the project subheading */
+.project h2 {
+  font-size: var(--main-font-size);
+  color: var(--primary-color-white);
+  font-weight: var(--heading-1-font-weight);
+  line-height: 26px;
+  margin-top: 1rem;
+  width: 459px;
+}
+
+/* Styles for the footer */
+footer {
+  width: 100%;
+  height: 393px;
+  background-color: var(--primary-color-black);
+}
+
+/* Styles for the footer links */
+.footer-links a {
+  text-decoration: none;
+  color: var(--primary-color-white);
+  padding: 0 18px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* Styles for the foot container */
+.foot {
+  padding-top: 7rem;
+}
+
+/* Styles for the horizontal rule */
+hr {
+  width: 1111px;
+  height: 1px;
+  margin: 40px auto;
+}
+
+/* Styles for the container */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--secondary-color-light-grey);
+  width: 69.438rem;
+  margin: 0 auto;
+  line-height: 1.5rem;
+}
+
+/* Styles for the container with direction */
+.container-direction {
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+/* Styles for the container heading with direction */
+.container-direction h1 {
+  font-size: var(--heading-3-font-size);
+}
+
+/* Styles for the container subheading with direction */
+.container-direction h2 {
+  font-size: var(--heading-1-font-size);
+}
+
+/* Styles for the container with contact */
+.container-contact {
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+/* Styles for the container heading with contact */
+.container-contact h1 {
+  font-size: var(--heading-3-font-size);
+}
+
+/* Styles for the container subheading with contact */
+.container-contact h2 {
+  font-size: var(--heading-1-font-size);
+}
+
+/* Styles for the footer icons */
+.footer-icons {
+  width: 10rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 45px;
+}
+
+/* Styles for the footer icon images */
+.footer-icons img {
+  width: 15px;
+}
+
+@media screen and (max-width: 768px) and (min-width: 480px) 
+{
+  .logo{
+    margin-left: 15px;
+  }
+  header{
+    width: 720px;
+  }
+
+  nav{
     width: 100%;
-    height: 393px;
-    background-color: var(--primary-color-black);
-    }
-    
-    /* Styles for the footer links */
-    .footer-links a {
-    text-decoration: none;
-    color: var(--primary-color-white);
-    padding: 0 18px;
-    font-size: 14px;
-    font-weight: 400;
-    }
-    
-    /* Styles for the foot container */
-    .foot {
-    padding-top: 7rem;
-    }
-    
-    /* Styles for the horizontal rule */
-    hr {
-    width: 1111px;
-    height: 1px;
-    margin: 40px auto;
-    }
-    
-    /* Styles for the container */
-    .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: var(--secondary-color-light-grey);
-    width: 69.438rem;
+  }
+
+  .links{
+    width: 250px;
+    margin-left: 6rem;
+  }
+
+  .link {
+    width: 250px;
+    margin-left: 6rem;
+  }
+
+  .links a {
+    font-size: 10px;
+  }
+
+  .web_design{
+    width: 689px;
+    left: 30px;
+  }
+
+  .design{
     margin: 0 auto;
-    line-height: 1.5rem;
-    }
-    
-    /* Styles for the container with direction */
-    .container-direction {
-    mix-blend-mode: normal;
-    opacity: 0.5;
-    }
-    
-    /* Styles for the container heading with direction */
-    .container-direction h1 {
-    font-size: var(--heading-3-font-size);
-    }
-    
-    /* Styles for the container subheading with direction */
-    .container-direction h2 {
-    font-size: var(--heading-1-font-size);
-    }
-    
-    /* Styles for the container with contact */
-    .container-contact {
-    mix-blend-mode: normal;
-    opacity: 0.5;
-    }
-    
-    /* Styles for the container heading with contact */
-    .container-contact h1 {
-    font-size: var(--heading-3-font-size);
-    }
-    
-    /* Styles for the container subheading with contact */
-    .container-contact h2 {
-    font-size: var(--heading-1-font-size);
-    }
-    
-    /* Styles for the footer icons */
-    .footer-icons {
-    width: 10rem;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 45px;
-    }
-    
-    /* Styles for the footer icon images */
-    .footer-icons img {
-    width: 15px;
-    }
+  }
+
+  .leaf img{
+    width: 750px;
+  }
+
+  .grid-content{
+    width: 750px;
+  }
+
+  /* Styles for the grid container */
+.grid-container {
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, auto);
+  gap: 5rem;
+  /* background-color: #1d1c1e; */
+}
+
+.grid-container-container{
+  gap: 5rem;
+}
+
+.grid-content-container{
+  display: block;
+}
+
+.grid-item-container{
+  height: 320px;
+}
+
+.grid-item-container-container{
+  height: 320px;
+}
+.express{
+  text-align: center;
+  height: 310px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 0px;
+}
+
+.text{
+  margin-top: 80px;
+  /* text-align: center;
+  background: #1d1c1e; */
+}
+
+.project-container{
+  margin-top: 18rem;
+  width: 690px;
+}
+
+.grid-item{
+  display: flex;
+  width: 689px;
+  height: 310px;
+  margin-top: -4rem;
+}
+
+.svg-container img{
+  width: 338px;
+  height: 310px;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 0px;
+}
+
+hr{
+  width: 690px;
+}
+
+.container{
+  width: 700px;
+}
+
+.gig{
+  display: block;
+  margin: 0 auto;
+}
+
+.project h1{
+  margin: auto;
+  text-align: center;
+}
+
+.project h2{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.get-touch{
+  margin: 94px 0px 0px 260px;
+}
 
 
+}
