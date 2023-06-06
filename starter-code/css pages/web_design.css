@@ -51,7 +51,7 @@ main {
 }
 
 /* Styles for the navigation */
-nav {
+nav, .contact {
   width: 69.438rem;
   display: flex;
   justify-content: space-between;
@@ -60,14 +60,14 @@ nav {
 }
 
 /* Styles for the links container */
-.links {
+.link {
   display: flex;
   width: 370px;
   justify-content: space-between;
 }
 
 /* Styles for the links */
-.links a {
+.link a {
   text-decoration: none;
   padding: 0 0;
   font-size: 14px;
@@ -78,11 +78,11 @@ nav {
 
 /* Styles for the link with class "link" */
 .link a {
-  color: var(--primary-color-white);
+  color: var(--primary-color-black);
 }
 
 /* Styles for the link on hover */
-.links a:hover {
+.link a:hover {
   text-decoration: underline;
   cursor: pointer;
 }
@@ -413,7 +413,7 @@ footer {
 }
 
 /* Styles for the footer links */
-.footer-links a {
+.links-link a {
   text-decoration: none;
   color: var(--primary-color-white);
   padding: 0 18px;
@@ -499,28 +499,7 @@ hr {
   }
 
   nav{
-    width: 100%;
-  }
-
-  .links{
-    width: 250px;
-    margin-left: 6rem;
-  }
-
-  .link {
-    position: absolute;
-    margin-left: 29rem;
-  }
-
-  .link  a{
-   
-   color: var(--primary-color-black);
-   text-decoration: none;
-  }
-
-  .links a {
-    font-size: 10px;
-    
+    width: 720px;
   }
 
   .web_design{
@@ -624,17 +603,16 @@ hr{
   margin: 94px 0px 0px 260px;
 }
 
+footer{
+  height: 430px;
+}
+
 
 }
 
 @media screen and (max-width: 480px) and (min-width: 280px) {
-  .desk{
+  .link{
     display: none;
-  }
-
-  .links {
-    display: block;
-    width: 327px;
   }
 
   nav{
@@ -666,7 +644,6 @@ hr{
   .grid-content-container{
     display: block;
     width: 327px;
-    gap: 2rem;
   }
 
   .grid-item img{
@@ -681,13 +658,29 @@ hr{
   .grid-item-container-container{
     width: 315px;
     height: 250px;
-    top: 1rem;
   }
 
   .project-container{
     width: 315px;
-    height: 380px;
-    top: 15rem;
+    height: 370px;
+  }
+
+  .gig{
+    height: 350px;
+  }
+
+  .project{
+    text-align: center;
+    width: 120px;
+  }
+
+  .project h1{
+    text-align: center;
+  }
+
+  .project h2{
+    text-align: center;
+    width: 300px;
   }
 
   footer{
@@ -708,16 +701,12 @@ hr{
     display: block;
   }
 
-  .foot{
-    position: relative;
-    top: 10rem;
-    height: 700px;
-  }
-
   .foot-container{
     display: block;
-    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
     width: 315px;
+    height: 498px;
   }
 
 }
