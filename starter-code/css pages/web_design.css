@@ -620,9 +620,27 @@ footer{
   }
 
   .web_design{
-    width: 315px;
+    text-align: center;
+    width: 100%;
     height: 250px;
-    margin-left: -12rem;
+    border-radius: 0;
+    margin-left: -13rem;
+  }
+
+  .design{
+    position: relative;
+    text-align: center;
+    left: -1.4rem;
+  }
+
+  .design h1{
+    text-align: center;
+    font-size: 32px;
+  }
+
+  .design h2{
+    text-align: center;
+    width: 350px;
   }
 
   .leaf img{
@@ -656,49 +674,74 @@ footer{
   }
 
   .grid-item-container-container{
+    top: 1rem;
     width: 315px;
     height: 250px;
   }
 
   .project-container{
-    width: 315px;
-    height: 370px;
-  }
+    top: 12rem;
+    width: 327px;
+    height: 379px;
+}
+.gig{
+    display: block;
+}
+.project{
+    width: 279px;
+    justify-content: center;
+    margin:  0 auto;
+}
 
-  .gig{
-    height: 350px;
-  }
-
-  .project{
+.project h2{
+    width: 19rem;
     text-align: center;
-    width: 120px;
-  }
-
-  .project h1{
+    padding-right: 1rem;
+    margin-top: 2rem;
+}
+.project h1{
+    width: 279px;
+    height: 82px;
     text-align: center;
-  }
-
-  .project h2{
-    text-align: center;
-    width: 300px;
-  }
+    margin-top: -1.5rem;
+}
+.get-touch {
+    margin-left: 5rem;
+    top: -1rem;
+    border-radius: .5rem;
+    border: none;
+}
 
   footer{
-    height: 866px;
+    height: 700px;
   }
 
   hr{
-    width: 320px;
+    position: relative;
+    margin-top: -3rem;
+    width: 327px;
+  }
+  
+  .links-link{
+    position: relative;
+    top: 3rem;
   }
 
   .contact{
+    text-align: center;
     display: block;
-    width: 327px;
+    width: 185px;
+    gap: 3rem;
   }
 
   .container{
     width: 315px;
     display: block;
+    text-align: center;
+    margin-top: 10rem;
+  }
+  .container-contact{
+    margin-top: 2rem;
   }
 
   .foot-container{
@@ -707,6 +750,11 @@ footer{
     align-items: center;
     width: 315px;
     height: 498px;
+  }
+
+  .footer-icons{
+    position: relative;
+    left: 5rem;
   }
 
 }
