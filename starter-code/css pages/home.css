@@ -296,7 +296,13 @@ color: var(--primary-color-white);
 
 
 
-
+.bubbles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    bottom: 24rem;
+}
 
 .hero-image{
     display: flex;
@@ -941,8 +947,11 @@ margin-top: 40rem;
      margin: 0 auto;
      position: relative;
      bottom: 10rem;
+     
     
 } 
+
+
 
 
 .hero-content{
