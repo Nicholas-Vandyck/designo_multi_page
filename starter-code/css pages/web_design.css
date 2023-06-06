@@ -174,6 +174,7 @@ nav, .contact {
   margin: 0 auto;
   background: #FDF3F0;
   border-radius: 15px;
+  cursor: pointer;
 }
 
 /* Styles for the SVG container */
@@ -188,19 +189,34 @@ nav, .contact {
   text-align: center;
   background: #FDF3F0;
   border-radius: 15px;
-  color: var(--primary-color-peach);
   line-height: 26px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+ 
+}
+
+.express:hover{
+  background: var(--primary-color-peach);
 }
 
 /* Styles for the express heading */
 .express h1 {
   padding-top: 2rem;
+  color: var(--primary-color-peach);
   font-weight: var(--heading-2-font-weight);
   font-size: var(--heading-3-font-size);
   letter-spacing: 5px;
 }
+
+/* .express h1:hover {
+  cursor: pointer;
+  color: var(--primary-color-white);
+}
+
+.text h2:hover {
+  cursor: pointer;
+  color: var(--primary-color-white);
+} */
 
 /* Styles for the express subheading */
 .express h2 {
@@ -208,7 +224,7 @@ nav, .contact {
   color: var(--secondary-color-dark-peach);
   font: var(--main-font-size);
   padding-top: 16px;
-  width: 286px;
+  /* width: 286px; */
 }
 
 .grid-container-container {
