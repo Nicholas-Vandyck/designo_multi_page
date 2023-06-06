@@ -138,7 +138,7 @@ footer{
     background-color: var(--primary-color-black);
 }
 
-.footer-links a{
+.links-link a{
     text-decoration: none;
     color: var(--primary-color-white);
     padding: 0 18px;
@@ -159,7 +159,7 @@ hr{
 }
 
 
-.container {
+.container1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -198,3 +198,114 @@ hr{
     width: 15px;
 }
 
+@media only screen and (max-width:425px) and (min-width:305px){
+    
+    .project-container{
+        width: 327px;
+        height: 379px;
+    }
+    .gig{
+        display: block;
+    }
+    .project{
+        width: 279px;
+        justify-content: center;
+        margin:  0 auto;
+    }
+    
+    .project h2{
+        width: 19rem;
+        text-align: center;
+        padding-right: 1rem;
+        margin-top: 2rem;
+    }
+    .project h1{
+        width: 279px;
+        height: 82px;
+        text-align: center;
+        margin-top: -1.5rem;
+    }
+    .get-touch {
+        margin-left: 5rem;
+        top: -1rem;
+        border-radius: .5rem;
+        border: none;
+    }
+
+
+    footer{
+        
+        width: 375px;
+        height: 866px;
+    }
+    nav {
+        display: block;
+        justify-content: center;
+    }
+    footer .logo {
+        position: relative;
+        left: 3rem;
+    }
+    .links-link{
+        width: 15rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        top: 5rem;
+        left: 6rem;
+        gap: 2rem;
+    }
+    .links-link a{
+        width: 10rem;
+        display: flex;
+        justify-content: center;
+    }
+    hr {
+        position: relative;
+        width: 327px;
+        margin-top: -5rem;
+        left: .5rem;
+    }
+
+    /* .foot{ 
+        width: 327px;
+    } */
+    
+    .foot1{
+        width: 327px;
+        height: 498px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    .container1{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 15rem;
+        margin-left: 3rem;
+        width: 16rem;
+    }
+    .container-direction{
+        display: flex;
+        flex-direction: column;
+        margin-top: 12rem;
+        justify-content: center;
+        align-items: center;  
+    }
+    .container-contact{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-icons{
+        position: relative;
+        left: 3rem;
+    }
+    
+    
+}
