@@ -508,12 +508,19 @@ hr {
   }
 
   .link {
-    width: 250px;
-    margin-left: 6rem;
+    position: absolute;
+    margin-left: 29rem;
+  }
+
+  .link  a{
+   
+   color: var(--primary-color-black);
+   text-decoration: none;
   }
 
   .links a {
     font-size: 10px;
+    
   }
 
   .web_design{
@@ -527,6 +534,7 @@ hr {
 
   .leaf img{
     width: 750px;
+   
   }
 
   .grid-content{
@@ -538,7 +546,6 @@ hr {
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(1, auto);
   gap: 5rem;
-  /* background-color: #1d1c1e; */
 }
 
 .grid-container-container{
@@ -547,14 +554,18 @@ hr {
 
 .grid-content-container{
   display: block;
+  width: 690px;
 }
 
 .grid-item-container{
   height: 320px;
+  width: 690px;
 }
 
 .grid-item-container-container{
   height: 320px;
+  width: 690px;
+  margin-top: 24px;
 }
 .express{
   text-align: center;
@@ -565,8 +576,6 @@ hr {
 
 .text{
   margin-top: 80px;
-  /* text-align: center;
-  background: #1d1c1e; */
 }
 
 .project-container{
@@ -615,5 +624,100 @@ hr{
   margin: 94px 0px 0px 260px;
 }
 
+
+}
+
+@media screen and (max-width: 480px) and (min-width: 280px) {
+  .desk{
+    display: none;
+  }
+
+  .links {
+    display: block;
+    width: 327px;
+  }
+
+  nav{
+    width: 320px;
+  }
+
+  .web_design{
+    width: 315px;
+    height: 250px;
+    margin-left: -12rem;
+  }
+
+  .leaf img{
+    width: 327px;
+    height: 460px;
+  }
+
+  .grid-content{
+    width: 320px;
+  }
+
+  .grid-container {
+    width: 320px;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    
+  }
+
+  .grid-content-container{
+    display: block;
+    width: 327px;
+    gap: 2rem;
+  }
+
+  .grid-item img{
+    width: 320px;
+  }
+
+  .grid-item-container{
+    width: 315px;
+    height: 250px;
+  }
+
+  .grid-item-container-container{
+    width: 315px;
+    height: 250px;
+    top: 1rem;
+  }
+
+  .project-container{
+    width: 315px;
+    height: 380px;
+    top: 15rem;
+  }
+
+  footer{
+    height: 866px;
+  }
+
+  hr{
+    width: 320px;
+  }
+
+  .contact{
+    display: block;
+    width: 327px;
+  }
+
+  .container{
+    width: 315px;
+    display: block;
+  }
+
+  .foot{
+    position: relative;
+    top: 10rem;
+    height: 700px;
+  }
+
+  .foot-container{
+    display: block;
+    margin: 0 auto;
+    width: 315px;
+  }
 
 }
