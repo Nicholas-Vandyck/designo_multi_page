@@ -215,13 +215,33 @@ nav{
     width: 541px;
     height: 308px;
     display: flex;
-    background: url(../assets/home/desktop/image-app-design.jpg);
-    flex-direction: column;
+   flex-direction: column;
     align-items: center;
     justify-content: center;
+    background: url(../assets/home/desktop/image-app-design.jpg);
     padding: 30px; 
     border-radius: 20px;
 }
+/* .design-item::after{
+    content: "";
+    background: url(../assets/home/desktop/image-app-design.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 541px;
+    height: 308px;
+    position: absolute;
+    border-radius: 15px;
+    z-index: -2;
+}
+ .design-item::before {
+    content: "";
+    position: absolute;
+    width: 541px;
+    height: 308px;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+  } */
 .design-item h2 {
     font-weight: 400;
     font-size: 40px;
@@ -234,10 +254,11 @@ nav{
     width: 541px;
     height: 308px;
     display: flex;
-    background-image: url(../assets/home/desktop/image-web-design-large.jpg) ;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background: url(../assets/home/desktop/image-web-design-large.jpg) ;
+    
     padding: 30px; 
     border-radius: 20px;
 }
@@ -249,6 +270,27 @@ nav{
     color: #FFFFFF;
     text-transform: uppercase;
 }
+/* .design-item1::after{
+    content: "";
+    background-image: url(../assets/home/desktop/image-web-design-large.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 541px;
+    height: 308px;
+    position: absolute;
+    border-radius: 15px;
+    z-index: -2;
+}
+
+ .design-item1::before {
+    content: "";
+    position: absolute;
+    width: 541px;
+    height: 308px;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+  } */
 .design-item button{
     background: none;
     border: none;
@@ -434,6 +476,23 @@ hr{
         background: #FDF3F0
         
     }
+    /* .design-item::after{
+        width: 689px;
+        height: 310px;
+    }
+     .design-item::before {
+        width: 689px;
+        height: 310px;
+      }
+      .design-item1::after{
+        width: 689px;
+        height: 310px;
+        
+    }
+     .design-item1::before {
+        width: 689px;
+        height: 310px;
+      } */
     
     .container {
         display: grid;
@@ -446,8 +505,9 @@ hr{
         width: 339px;
         height: 310px;
         border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
         border-top-right-radius: 0px;
-        margin-right: 5rem;
+        margin-right: 7rem;
     }
     .grid-item h2{
         display: block;
@@ -597,7 +657,8 @@ hr{
         height: 478px;
         background: #FDF3F0
         
-    }
+    } 
+    
     .container {
         display: grid;
         grid-template-columns: auto ;
