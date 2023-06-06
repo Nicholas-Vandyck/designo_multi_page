@@ -52,7 +52,6 @@ nav {
     justify-content: space-between;
     align-items: center;
     margin: 64.84px auto 5rem auto;
-
 }
 
 .links {
@@ -77,7 +76,6 @@ nav {
 .logo {
     width: 196px;
 }
-
 
 .links a:hover {
     text-decoration: underline;
@@ -202,43 +200,70 @@ nav {
 }
 
 .pages {
-    border: 1px solid black;
     width: 69.438rem;
     margin: 0 auto;
     height: auto;
     display: grid;
+    grid-template-columns: auto auto;
+    gap: 1.7rem;
+    margin-bottom: 6rem;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    height: 19.25rem;
+    width: 33.813rem;
+}
+
+.image-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
 }
 
 .page1 {
-    background-image: url(/starter-code/assets/home/desktop/image-web-design-small.jpg);
     height: 19.25rem;
     width: 33.813rem;
     border-radius: 15px;
-
+}
+.page-tab {
+    display: none;
 }
 
 .web {
     position: relative;
-    bottom: 10rem;
+    bottom: 13.5rem;
+    left: 5rem;
     color: var(--primary-color-white);
-    width: 16.75rem;
-    /* margin: 0 auto; */
-    font-weight: 400;
+    width: 24rem;
+    font-weight: var(--heading-1-font-weight);
     text-transform: uppercase;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    letter-spacing: 2px;
 }
 
 .web h1 {
     font-size: 40px;
+    margin-bottom: 1rem;
+    font-weight: 500;
 }
 
 .web a {
     text-decoration: none;
     font-size: 15px;
     color: var(--primary-color-white);
+    width: 197px;
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 5px;
 }
 
 .project-container {
@@ -261,12 +286,11 @@ nav {
     justify-content: space-between;
 }
 
-
 .get-touch {
     width: 9.5rem;
     height: 3.5rem;
     position: relative;
-    top: -17rem;
+    top: 7rem;
     float: right;
     margin-right: 5rem;
     border-radius: .5rem;
@@ -275,6 +299,12 @@ nav {
     -moz-border-radius: .5rem;
     -ms-border-radius: .5rem;
     -o-border-radius: .5rem;
+}
+
+.get-touch:hover {
+    background-color: var(--secondary-color-light-peach);
+    color: var(--primary-color-white);
+    cursor: pointer;
 }
 
 .project {
@@ -314,7 +344,6 @@ footer {
     font-weight: var(--heading-1-font-weight);
 }
 
-
 .foot {
     padding-top: 7rem;
 }
@@ -325,7 +354,6 @@ hr {
     margin: 40px auto;
 
 }
-
 
 .container {
     display: flex;
@@ -372,4 +400,132 @@ hr {
 
 .footer-icons img {
     width: 15px;
+}
+
+@media screen and (min-width: 481px) and (max-width: 820px) {
+    nav {
+        width: 43rem;
+    }
+
+    .app-section {
+        width: 43rem;
+        margin-bottom: 10rem;
+    }
+
+    .app-div {
+        width: 22rem;
+    }
+
+    .circ {
+        display: none;
+    }
+
+    .stuff {
+        position: relative;
+        width: 43rem;
+        margin: 0 auto;
+        grid-template-columns: auto;
+        margin-bottom: 5rem;
+        /* border: 1px solid black;         */
+    }
+    
+    .box {
+        width: 43rem;
+        height: 19.375rem;
+    }
+    
+    .in_img {
+        margin: 0 auto;
+        height: 19.375rem;
+        border-radius: 15px 0px 0px 15px;
+    }
+    
+    .words {
+        width: 17.875rem;
+        position: relative;
+        bottom: 15rem;
+        left: 11rem;
+    } 
+
+    .pages {
+        width: 43rem;
+        grid-template-columns: auto;
+    }
+    
+    .image-container {
+        height: 12.5rem;
+        width: 43rem;
+    }
+
+    .page1 {
+        display: none;
+    }
+    
+    .page-tab {
+        display: inline;
+        height: 12.5rem;
+        width: 43rem;
+        border-radius: 15px;
+    }
+    
+    .web {
+        bottom: 10rem;
+        left: 9.5rem;
+    } 
+
+    .project-container {
+        /* position: relative; */
+        top: 0;
+        width: 43.125rem;
+        height: 21.875rem;
+    }
+    /*
+    .gig {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .get-touch {
+        width: 9.5rem;
+        height: 3.5rem;
+        position: relative;
+        top: 7rem;
+        float: right;
+        margin-right: 5rem;
+        border-radius: .5rem;
+        border: none;
+        -webkit-border-radius: .5rem;
+        -moz-border-radius: .5rem;
+        -ms-border-radius: .5rem;
+        -o-border-radius: .5rem;
+    }
+
+    .get-touch:hover {
+        background-color: var(--secondary-color-light-peach);
+        color: var(--primary-color-white);
+        cursor: pointer;
+    }
+
+    .project {
+        position: relative;
+        top: 5rem;
+        margin-inline: 10%;
+    }
+
+    .project h1 {
+        font-size: var(--heading-2-font-size);
+        font-weight: var(--heading-2-font-weight);
+        color: var(--primary-color-white);
+        line-height: 40px;
+        width: 268px;
+    }
+
+    .project h2 {
+        font-size: var(--main-font-size);
+        color: var(--primary-color-white);
+        font-weight: var(--heading-1-font-weight);
+        line-height: 26px;
+        margin-top: 1rem;
+        width: 459px;
+    } */
 }

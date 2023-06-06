@@ -1,3 +1,6 @@
+window.addEventListener('load', (e)=>{
+e.preventDefault();
+
 const gridStuffs = [
   {
     image: "/starter-code/assets/app-design/desktop/image-airfilter.jpg",
@@ -53,19 +56,61 @@ gridStuffs.forEach(gridstuff => {
   words.appendChild(paragraph);
 
   stuff.appendChild(box);
-  console.log(box);
+  // console.log(box);
 });
 
 const pagesLinks = [
   {
     title: "Web Design",
-    description: "View Projects"
+    description: "View Projects",
+    image: "../assets/home/desktop/image-web-design-small.jpg",
+    imageTablet: "../assets/home/tablet/image-web-design.jpg"
   },
   {
-    title: "Web Design",
-    description: "View Projects" 
+    title: "App Design",
+    description: "View Projects",
+    image: "../assets/home/desktop/image-graphic-design.jpg",
+    imageTablet: "../assets/home/tablet/image-graphic-design.jpg"
   }
-]
+];
 
   
+const pages = document.querySelector(".pages");
 
+pagesLinks.map(page => {
+  const imageContainer = document.createElement("div");
+  imageContainer.classList.add("image-container");
+
+  const page1 = document.createElement("img");
+  page1.classList.add("page1");
+  page1.src = page.image;
+  imageContainer.appendChild(page1);
+
+  const pageTab = document.createElement("img");
+  pageTab.classList.add("page-tab");
+  pageTab.src = page.imageTablet;
+  imageContainer.appendChild(pageTab);
+
+  const web = document.createElement("div");
+  web.classList.add("web");
+  const header = document.createElement("h1");
+  header.textContent = page.title;
+  web.appendChild(header);
+  imageContainer.appendChild(web);
+
+  const anchor = document.createElement("a");
+  anchor.href = "../html pages/web-design.html";
+  anchor.textContent = page.description;
+  const span = document.createElement("span");
+  const img = document.createElement("img");
+  img.setAttribute('src', '../assets/shared/desktop/icon-right-arrow.svg');
+  span.appendChild(img);
+  anchor.appendChild(span);
+
+  web.appendChild(anchor);
+
+  pages.appendChild(imageContainer);
+  console.log(imageContainer);
+})
+
+});
