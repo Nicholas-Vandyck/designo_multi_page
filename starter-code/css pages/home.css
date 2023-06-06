@@ -1042,8 +1042,45 @@ hr{
  @media only screen and (max-width:360px) and (min-width:320px){
 
     body{
-        
+      
+    }
+    .first-element {
+        background-image: url(/starter-code/assets/home/mobile/image-web-design.jpg);
+        background-repeat: no-repeat;
+        width: 321px;
+        height: 265px;
+        border-radius: 5px;
     }
 
+    .second-element {
+        background-image: url(/starter-code/assets/home/mobile/image-app-design.jpg);
+        background-repeat: no-repeat;
+        width: 321px;
+        height: 263px;
+        border-radius: 5px;
+    }
+
+    .third-element {
+        background-image: url(/starter-code/assets/home/mobile/image-graphic-design.jpg);
+        background-repeat: no-repeat;
+        width: 321px;
+        height: 308px;
+        border-radius: 5px;
+    }
+
+    .grid-container{
+       position: relative;
+       right: 0.8rem;
+    }
  }
 
+ @media only screen and (max-width:414px) and (min-width:320px){
+ 
+
+  
+
+    .side-nav{
+        position: absolute; 
+        top: 6.8%;
+    }
+ }
