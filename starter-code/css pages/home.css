@@ -1083,4 +1083,53 @@ hr{
         position: absolute; 
         top: 6.8%;
     }
+ } 
+
+
+ @media only screen and (max-width:375px) and (min-width:320px){
+    body{
+        
+    }
+
+    .first-element {
+        background-image: url(/starter-code/assets/home/mobile/image-web-design.jpg);
+        background-repeat: no-repeat;
+        width: 321px;
+        height: 265px;
+        border-radius: 5px;
+    }
+
+
+
+    .second-element {
+        background-image: url(/starter-code/assets/home/mobile/image-app-design.jpg);
+        background-repeat: no-repeat;
+        width: 320px;
+        height: 265px;
+        border-radius: 5px;
+    }
+
+    .third-element {
+        background-image: url(/starter-code/assets/home/mobile/image-graphic-design.jpg);
+        background-repeat: no-repeat;
+        width: 320px;
+        height: 308px;
+        border-radius: 5px;
  }
+
+ .grid-content {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.2rem;
+}
+
+
+}
+
+@media only screen and (max-width:393px) and (min-width:320px){
+    body{
+        
+    }
+}
