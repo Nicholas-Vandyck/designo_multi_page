@@ -64,13 +64,15 @@ const pagesLinks = [
     title: "Web Design",
     description: "View Projects",
     image: "../assets/home/desktop/image-web-design-small.jpg",
-    imageTablet: "../assets/home/tablet/image-web-design.jpg"
+    imageTablet: "../assets/home/tablet/image-web-design.jpg",
+    imageMobile: "../assets/home/mobile/image-web-design.jpg"
   },
   {
     title: "App Design",
     description: "View Projects",
     image: "../assets/home/desktop/image-graphic-design.jpg",
-    imageTablet: "../assets/home/tablet/image-graphic-design.jpg"
+    imageTablet: "../assets/home/tablet/image-graphic-design.jpg",
+    imageMobile: "../assets/home/mobile/image-graphic-design.jpg"
   }
 ];
 
@@ -90,6 +92,11 @@ pagesLinks.map(page => {
   pageTab.classList.add("page-tab");
   pageTab.src = page.imageTablet;
   imageContainer.appendChild(pageTab);
+
+  const pageMob = document.createElement("img");
+  pageMob.classList.add("page-mob");
+  pageMob.src = page.imageMobile;
+  imageContainer.appendChild(pageMob);
 
   const web = document.createElement("div");
   web.classList.add("web");
@@ -114,3 +121,15 @@ pagesLinks.map(page => {
 })
 
 });
+
+// const nav = document.querySelector('nav');
+const links = document.querySelector('.links');
+
+const div = document.createElement('div');
+const image = document.createElement('img');
+image.src = "../assets/shared/mobile/icon-hamburger.svg";
+div.appendChild(image);
+
+const nav = links.parentNode;
+nav.replaceChild(div, links);
+console.log(div);
