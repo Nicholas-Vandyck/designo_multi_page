@@ -123,13 +123,14 @@ pagesLinks.map(page => {
 });
 
 // const nav = document.querySelector('nav');
-const links = document.querySelector('.links');
+/* const links = document.querySelector('.links');
 
 const div = document.createElement('div');
+div.classList.add('hamburger');
 const image = document.createElement('img');
 image.src = "../assets/shared/mobile/icon-hamburger.svg";
 div.appendChild(image);
 
 const nav = links.parentNode;
 nav.replaceChild(div, links);
-console.log(div);
+console.log(div); */
