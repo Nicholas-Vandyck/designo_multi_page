@@ -404,6 +404,7 @@ letter-spacing: 5px;
 .side-leaf{
     position: absolute;
     right: 0%;
+    z-index : -1;
   
 }
 
