@@ -200,6 +200,43 @@ hr{
 
 @media only screen and (max-width:425px) and (min-width:305px){
     
+    .link{
+        display: none;
+      }
+    
+      .mob-open{
+        display: flex;
+      }
+    
+      .mob-menu{
+        height: 1rem;
+      }
+    
+      .link a{
+        color: var(--primary-color-white);
+        display: block;
+        position: relative;
+        top: 48px;
+        margin: 0 auto;
+        width: 320px;
+        height: 50px;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 25px;
+        letter-spacing: 2px;
+      }
+    
+      .link{
+        position: absolute;
+        top:150px;
+        right: 0rem;
+        width: 100%;
+        height: 235px;
+        background: var(--primary-color-black);
+        z-index: 1;
+      }
+    
+   
     .project-container{
         width: 327px;
         height: 379px;
