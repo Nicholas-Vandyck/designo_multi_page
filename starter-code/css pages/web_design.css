@@ -212,15 +212,15 @@ nav, .contact {
   letter-spacing: 5px;
 }
 
-/* .express h1:hover {
+.express, .text h1:hover {
+  cursor: pointer;
+  color: var(--primary-color-white);
+} 
+
+.express, .text h2:hover {
   cursor: pointer;
   color: var(--primary-color-white);
 }
-
-.text h2:hover {
-  cursor: pointer;
-  color: var(--primary-color-white);
-} */
 
 /* Styles for the express subheading */
 .express h2 {
